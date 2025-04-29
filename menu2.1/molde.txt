@@ -1,0 +1,32 @@
+
+Fixado por Miriam TechCod
+Miriam TechCod
+há 4 anos
+Conforme mostrado no video, SIGA OS PASSOS:
+PASSO 1:
+         Colar no head:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+PASSO 2:
+         Criar um arquivo .js e chamar ele no head
+        
+PASSO 3:
+         Colar seguinte código no arquivo .js:
+ $(document).ready(function() {
+ var botao = $('.bt');
+ var dropDown = $('.ul2');    
+
+    botao.on('click', function(event){
+        dropDown.stop(true,true).slideToggle();
+        event.stopPropagation();
+    });
+});
+//Subtituir as 2 classes
+
+PASSO 4:
+            Colocar no a:
+          <a href="javascript://" class="NOME">
+
+video
+
+https://www.youtube.com/watch?v=pxVk9-6AzQc&t=1335s

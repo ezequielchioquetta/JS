@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="shortcut icon" href="IMG-20200626-WA0001.jpg" type="image/x-icon">
+   
+</head>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @font-face {
+    font-family:'Meddon' ;
+    src: url("../menu2.1/Meddon-Regular.ttf") format('opentype');
+    font-weight: normal;}
+
+    @import url('https://fonts.googleapis.com/css2?family= família= Meddon & display=swap');
+
+:root{  /*variavel para todo pag */
+ 
+    
+--cor0:#b3d9ff;
+--cor1:#80bfff;
+--cor2:#3399ff;
+--cor3:#0073e6;
+--cor4:#00264d;
+--cor5:#000d1a;
+--fonte-padrao: Arial, Helvetica, sans-serif;
+--fonte-destaque: Bebas Neue, cursive;
+--fonte-android:Android,cursive;
+--font-Meddon:'Meddon', cursiva;
+--font-Lobster:'Lobster', cursive;
+
+}
+
+        *{
+           
+padding:0px;
+margin: 0px;
+ 
+        }
+        body{
+            height: 100vh;
+            background: black url('imagens/background002.jpg') center center no-repeat  fixed;
+            background-size: cover;
+            
+        }
+
+        h2{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0, 0, 1);
+            min-width: 483px;
+            max-width: 750px;
+            font-size: 1.5 vw
+            ; 
+        }
+        main{
+            background-color: white;
+            min-width: 483px;
+            max-width: 750px;
+            font: size 10vw; 
+            border-top-right-radius: 15px; 
+            border-top-left-radius:30px ;
+            border-bottom-left-radius: 10px ;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0, 0.443);
+            margin: -96px 100px -3px 0px;
+            padding: 20px 1px 20px 0px;
+        }
+        main.links{
+            min-width: 483px;
+            max-width: 750px;
+            text-align:right;
+            margin: 0px 0px 0px 100px;
+            padding: 0px 0px 0px 0px;
+
+        }
+        .img{
+            min-width: 460px;
+            max-width: 750px;
+            box-shadow: 0px 0px 10px rgba(0,0,0, 0.443);
+            margin:98px 10px 6px 23px;
+            padding: 0px 0px 0px 0px;
+            
+           
+        }
+        nav{
+            background-color: white;
+            min-width: 460px;
+            max-width: 750px;
+            border-top-right-radius: 15px; 
+            border-top-left-radius:30px ;
+            border-bottom-left-radius: 10px ;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0, 0.443);
+            margin: 20px 100px 0px 20px;
+            padding: 20px 1px 20px 15px;
+            text-align:left;
+            font-size: 2vw;
+
+        }
+    
+        
+        article,nav >ul{
+            min-width: 460px;
+            max-width: 750px;
+            margin: 0px 10px 0px 0px;
+            padding: 0px 0px 0px 0px;
+
+        }
+        .text {
+            min-width: 434px;
+            max-width: 750px;
+            font-size: 2.5vw;
+            text-align:justify;
+            font-family:'Times New Roman', Times, serif;
+            margin: 0px 100px 0px 20px;
+            padding:px 11px 9px 0px;
+        }
+        nav.links{
+            min-width: 460px;
+            max-width: 750px;
+            text-align:left;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+
+        }
+        .tab1:hover, .tab2:hover, .tab3:hover{
+            min-width: 460px;
+            max-width: 750px;
+            text-decoration:underline;
+            color:black;
+            font-size: 2.2 vw;
+            
+
+        }
+        header >h1{
+            text-align: center; 
+            color: white;
+            text-shadow: 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width: 460px;
+            max-width: 750px;
+            margin: 5px 54px -4px 0px;;
+            padding: 14px 4px 87px 0px;
+            font-size: 1.5 vw
+            
+        }
+         article >h2{
+
+            text-align: center; 
+            color: white;
+            text-shadow: 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width: 460px;
+            max-width: 750px;
+            margin: -96px 15px -3px 0px;
+            padding: 110px 158px 1px 0px;
+            font-size: 1.5 vw
+        }
+        header >h2{
+            text-align: center; 
+            color: white;
+            text-shadow: 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width: 460px;
+            max-width: 750px;
+            margin: -96px 55px -113px 0px;
+            padding: 20px 1px 20px 1px;
+        }
+        footer{
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2vw;
+            text-align: right;
+            margin: 30px 10px 20px 0px;
+
+
+        }
+        footer >a{
+            text-decoration: none;
+            font-size: 2vw;
+            text-align: right;
+            margin-top: 90vw;
+            
+        }
+        footer >a:hover{
+            
+            color: white;
+            font-size:2vw ;
+            text-decoration: underline;
+           
+
+        }
+        footer >a::before{
+            content:  '⫷';
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer >a::after{
+            content:  '⫸';
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+       
+</style>
+<body>
+<header>
+<h1>Minhas redes sociais</h1>
+<h2>Quem sou eu?</h2>
+</header>
+<main class="img">
+<img src="../menu2.1/imagens/ezequiel.png" alt="Ezequiel">
+<main class="text">
+
+            <p>     Ipsum dolor sit amet consectetur adipisicing elit. A libero odit itaque?
+     Veniam, consequuntur pariatur asperiores tempora quas ipsam rerum minus odio 
+     laborum ratione magnam nihil fugit earum repellendus. Quidem.</p>
+    </main>
+    </main>
+<article>
+    <h2>Como falar comigo</h2>
+</article>
+<nav>
+    <nav class="links">
+        <ul type="disc"> 
+            <li class="tab1"><a href="https://www.youtube.com/cursoemvideo" target="_self" rel="external"><img src="../menu2.1/imagens/icone-youtube.png" alt="youtube"> curso em vídeo</a>Para acessar o conteúdo em vídeo</li>
+            <li class="tab2"><a href="https://www.instagram.com/ezequiel.chioquetta/" target="_self" rel="external"><img src="../menu2.1/imagens/icone-instagram.png" alt="instagram"> instagram </a>Para acessar meu instagram </li>
+            <li class="tab3"><a href="https://www.facebook.com/ezequiel.chi/" target="_self" rel="external"><img src="../menu2.1/imagens/icone-facebook.png" alt="facebook"> facebook</a>Para acessar meu facebook</li>    
+            <li class="tab4"><a href="https://github.com/tectiezequiel" target="_self" rel="external"><img src="../menu2.1/imagens/icone-github.png" alt="github"> facebook</a>Para acessar meu github</li>   
+        </ul>
+</li>
+</nav>
+</nav>
+<footer>
+    
+    <a href="https://tectiezequiel.github.io/html/moldes/menu2.1/" rel="prev" target="self"> voltar</a>
+</footer>    
+</body>
+</html>

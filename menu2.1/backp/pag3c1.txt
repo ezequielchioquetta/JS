@@ -1,0 +1,243 @@
+!DOCTYPE html
+html lang=pt-br
+head
+    meta charset=UTF-8
+    meta http-equiv=X-UA-Compatible content=IE=edge
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleDesafiotitle
+    link rel=shortcut icon href=IMG-20200626-WA0001.jpg type=imagex-icon
+   
+head
+
+    style
+
+    @import url('httpsfonts.googleapis.comcss2family=Lobster&display=swap');
+
+    @import url('httpsfonts.googleapis.comcss2family=Bebas+Neue&display=swap');
+
+    @font-face {
+    font-family'Meddon' ;
+    src url(..menu2.1Meddon-Regular.ttf) format('opentype');
+    font-weight normal;}
+
+    @import url('httpsfonts.googleapis.comcss2family= família= Meddon & display=swap');
+
+root{  variavel para todo pag 
+ 
+    
+--cor0#b3d9ff;
+--cor1#80bfff;
+--cor2#3399ff;
+--cor3#0073e6;
+--cor4#00264d;
+--cor5#000d1a;
+--fonte-padrao Arial, Helvetica, sans-serif;
+--fonte-destaque Bebas Neue, cursive;
+--fonte-androidAndroid,cursive;
+--font-Meddon'Meddon', cursiva;
+--font-Lobster'Lobster', cursive;
+
+}
+
+        {
+           
+padding0px;
+margin 0px;
+ 
+        }
+        body{
+            height 100vh;
+            background black url('imagensbackground002.jpg') center center no-repeat  fixed;
+            background-size cover;
+            
+        }
+
+        h2{
+            
+            font-family Arial, Helvetica, sans-serif;
+            color rgb(0, 0, 1);
+            min-width 483px;
+            max-width 750px;
+            font-size 1.5 vw
+            ; 
+        }
+        main{
+            background-color white;
+            min-width 483px;
+            max-width 750px;
+            font size 10vw; 
+            border-top-right-radius 15px; 
+            border-top-left-radius30px ;
+            border-bottom-left-radius 10px ;
+            border-bottom-right-radius 10px;
+            box-shadow 0px 0px 10px rgba(0,0,0, 0.443);
+            margin -96px 100px -3px 0px;
+            padding 20px 1px 20px 0px;
+        }
+        main.links{
+            min-width 483px;
+            max-width 750px;
+            text-alignright;
+            margin 0px 0px 0px 100px;
+            padding 0px 0px 0px 0px;
+
+        }
+        .img{
+            min-width 460px;
+            max-width 750px;
+            box-shadow 0px 0px 10px rgba(0,0,0, 0.443);
+            margin98px 10px 6px 23px;
+            padding 0px 0px 0px 0px;
+            
+           
+        }
+        nav{
+            background-color white;
+            min-width 460px;
+            max-width 750px;
+            border-top-right-radius 15px; 
+            border-top-left-radius30px ;
+            border-bottom-left-radius 10px ;
+            border-bottom-right-radius 10px;
+            box-shadow 0px 0px 10px rgba(0,0,0, 0.443);
+            margin 20px 100px 0px 20px;
+            padding 20px 1px 20px 15px;
+            text-alignleft;
+            font-size 2vw;
+
+        }
+    
+        
+        article,nav ul{
+            min-width 460px;
+            max-width 750px;
+            margin 0px 10px 0px 0px;
+            padding 0px 0px 0px 0px;
+
+        }
+        .text {
+            min-width 434px;
+            max-width 750px;
+            font-size 2.5vw;
+            text-alignjustify;
+            font-family'Times New Roman', Times, serif;
+            margin 0px 100px 0px 20px;
+            paddingpx 11px 9px 0px;
+        }
+        nav.links{
+            min-width 460px;
+            max-width 750px;
+            text-alignleft;
+            margin 0px 0px 0px 0px;
+            padding 0px 0px 0px 0px;
+
+        }
+        .tab1hover, .tab2hover, .tab3hover{
+            min-width 460px;
+            max-width 750px;
+            text-decorationunderline;
+            colorblack;
+            font-size 2.2 vw;
+            
+
+        }
+        header h1{
+            text-align center; 
+            color white;
+            text-shadow 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width 460px;
+            max-width 750px;
+            margin 5px 54px -4px 0px;;
+            padding 14px 4px 87px 0px;
+            font-size 1.5 vw
+            
+        }
+         article h2{
+
+            text-align center; 
+            color white;
+            text-shadow 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width 460px;
+            max-width 750px;
+            margin -96px 15px -3px 0px;
+            padding 110px 158px 1px 0px;
+            font-size 1.5 vw
+        }
+        header h2{
+            text-align center; 
+            color white;
+            text-shadow 0px 7px 7px rgba(0,0,0, 0.443) ;
+            min-width 460px;
+            max-width 750px;
+            margin -96px 55px -113px 0px;
+            padding 20px 1px 20px 1px;
+        }
+        footer{
+            text-decoration none;
+            display inline-block;
+            font-size 2vw;
+            text-align right;
+            margin 30px 10px 20px 0px;
+
+
+        }
+        footer a{
+            text-decoration none;
+            font-size 2vw;
+            text-align right;
+            margin-top 90vw;
+            
+        }
+        footer ahover{
+            
+            color white;
+            font-size2vw ;
+            text-decoration underline;
+           
+
+        }
+        footer abefore{
+            content  '⫷';
+            font-family Arial, Helvetica, sans-serif;
+        }
+        footer aafter{
+            content  '⫸';
+            font-family Arial, Helvetica, sans-serif;
+        }
+        
+       
+style
+body
+header
+h1Minhas redes sociaish1
+h2Quem sou euh2
+header
+main class=img
+img src=..menu2.1imagensezequiel.png alt=Ezequiel
+main class=text
+
+            p     Ipsum dolor sit amet consectetur adipisicing elit. A libero odit itaque
+     Veniam, consequuntur pariatur asperiores tempora quas ipsam rerum minus odio 
+     laborum ratione magnam nihil fugit earum repellendus. Quidem.p
+    main
+    main
+article
+    h2Como falar comigoh2
+article
+nav
+    nav class=links
+        ul type=disc 
+            li class=tab1a href=httpswww.youtube.comcursoemvideo target=_self rel=externalimg src=..menu2.1imagensicone-youtube.png alt=youtube curso em vídeoaPara acessar o conteúdo em vídeoli
+            li class=tab2a href=httpswww.instagram.comezequiel.chioquetta target=_self rel=externalimg src=..menu2.1imagensicone-instagram.png alt=instagram instagram aPara acessar meu instagram li
+            li class=tab3a href=httpswww.facebook.comezequiel.chi target=_self rel=externalimg src=..menu2.1imagensicone-facebook.png alt=facebook facebookaPara acessar meu facebookli    
+            li class=tab4a href=httpsgithub.comtectiezequiel target=_self rel=externalimg src=..menu2.1imagensicone-github.png alt=github facebookaPara acessar meu githubli   
+        ul
+li
+nav
+nav
+footer
+    
+    a href=httpstectiezequiel.github.iohtmlmoldesmenu2.1 rel=prev target=self voltara
+footer    
+body
+html
