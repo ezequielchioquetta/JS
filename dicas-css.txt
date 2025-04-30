@@ -1,0 +1,89 @@
+🧱 SINTAXE BÁSICA:
+css
+Copiar
+Editar
+background: linear-gradient(direção, cor1, cor2, ...);
+✅ 1. DIREÇÕES POSSÍVEIS
+📌 Por palavras-chave:
+to right → da esquerda para a direita
+
+to left → da direita para a esquerda
+
+to top → de baixo para cima
+
+to bottom → de cima para baixo
+
+to top right → da parte inferior esquerda para o canto superior direito
+
+to bottom left → da parte superior direita para o canto inferior esquerdo
+
+etc.
+
+📐 Por ângulo (graus):
+0deg → de baixo para cima (equivalente a to top)
+
+90deg → da esquerda para a direita (equivale a to right)
+
+180deg → de cima para baixo (to bottom)
+
+270deg → da direita para a esquerda (to left)
+
+css
+Copiar
+Editar
+background: linear-gradient(90deg, red, blue);
+✅ 2. QUANTAS CORES QUISER
+Você pode usar 2, 3, 4... quantas cores quiser!
+
+css
+Copiar
+Editar
+background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+✅ 3. CONTROLAR PONTOS DA COR (paradas)
+Você pode definir em que ponto (%) cada cor deve aparecer:
+
+css
+Copiar
+Editar
+background: linear-gradient(to right, red 0%, yellow 50%, green 100%);
+Isso diz:
+
+red começa no 0%
+
+yellow no meio (50%)
+
+green no final (100%)
+
+✅ 4. Transparência com RGBA ou transparent
+css
+Copiar
+Editar
+background: linear-gradient(to right, rgba(255,0,0,0.5), transparent);
+✅ 5. Repetir o gradiente (com background-size)
+Para repetir o efeito como uma textura:
+
+css
+Copiar
+Editar
+background: repeating-linear-gradient(to right, red 0, red 10px, blue 10px, blue 20px);
+✅ 6. Gradiente com opacidade no texto
+Para usar o gradiente no texto, você usa:
+
+css
+Copiar
+Editar
+background: linear-gradient(to right, red, blue);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+💡 Dica extra: usar variáveis no gradiente (com CSS moderno)
+css
+Copiar
+Editar
+:root {
+  --cor1: red;
+  --cor2: blue;
+}
+
+div {
+  background: linear-gradient(to right, var(--cor1), var(--cor2));
+}

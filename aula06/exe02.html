@@ -6,11 +6,43 @@
     <title>Primeiro programa javascript</title>
 
     <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+            @font-face {
+            font-family: '20db';
+            src: url('../font/20-db/20db.otf') format('truetype');
+}
+
+            @import url('https://fonts.googleapis.com/css2?family= família= Meddon & display=swap');
+
+            :root{  /*variavel para todo pag */
+ 
+    
+        --cor0:#b3d9ff;
+        --cor1:#80bfff;
+        --cor2:#3399ff;
+        --cor3:#0073e6;
+        --cor4:#00264d;
+        --cor5:#000d1a;
+        --fonte-padrao: Arial, Helvetica, sans-serif;
+        --fonte-destaque: Bebas Neue, cursive;
+        --fonte-android:Android,cursive;
+        --font-Meddon:'Meddon', cursiva;
+
+}
+
+        *{
+           
+padding:0px;
+margin: 0px;
+ 
+        }
+
         body{
-            background-color: aquamarine;
-            color:blue;
-            font-size: 16
-            pt;
+            
+            background: linear-gradient(to right, rgb(27, 108, 155) 0%, yellow 50%, green 100%);
+            
+            color: rgb(7, 0, 1);
         }
 
         div{
@@ -18,16 +50,28 @@
 
 
         }
+
+        h1{
+
+            font-family: '20db', cursive;
+            font-size: 3.0em;
+            color: rgb(94, 2, 16);
+        }
+        
+        p{
+
+            font: bold 16px 'Arial', sans-serif;
+        }
     </style>
 </head>
 <body>
-    <H1>olá mundo</H1>
+    <H1>Olá mundo</H1>
     <p>Me livrei da maldição </p>
     
     <script>
            var nome=window.prompt('Qual seu nome?')
-           window.alert('Seu nome é '+ nome)
-           document.write('Seu nome é '+ nome +'!')
+           window.alert(`Seu nome é ${nome}`);
+           document.write(`Seu nome é ${nome} !`)
 
 
     </script>

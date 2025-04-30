@@ -7,3 +7,19 @@ site para fazer clone do mesmo repositório
 dica de segurança do GitHub
 
 *** https://www.youtube.com/watch?v=bsI6P_IM_hg&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&index=11
+
+---------------------------------------------------------
+✅ Correção usando template strings corretamente:
+javascript
+Copiar
+Editar
+var nome = window.prompt('Qual seu nome?');
+window.alert(`Seu nome é ${nome}`);
+document.write(`Seu nome é ${nome}!`);
+O que mudou:
+
+Usei crase (`) no lugar de aspas simples.
+
+Removi o +! e coloquei o ponto de exclamação direto dentro da template string.
+
+----------------------------------------------------------
