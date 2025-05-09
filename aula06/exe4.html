@@ -1,80 +1,135 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro programa javascript</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Primeiro Programa JavaScript</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-        @font-face {
-        font-family: '20db';
-        src: url('../font/20-db/20db.otf') format('truetype');
-}
-
-        @import url('https://fonts.googleapis.com/css2?family= família= Meddon & display=swap');
-
-        :root{  /*variavel para todo pag */
-
-
-    --cor0:#b3d9ff;
-    --cor1:#80bfff;
-    --cor2:#3399ff;
-    --cor3:#0073e6;
-    --cor4:#00264d;
-    --cor5:#000d1a;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-destaque: Bebas Neue, cursive;
-    --fonte-android:Android,cursive;
-    --font-Meddon:'Meddon', cursiva;
-
-}
-
-    *{
-       
-padding:0px;
-margin: 0px;
-
+    :root {
+      --cor-primaria: #E6E6FA;
+      --cor-secundaria: #FADADD;
+      --cor-destaque: #D3D3D3;
+      --fonte-padrao: 'Arial', sans-serif;
+      --fonte-destaque: 'Bebas Neue', cursive;
     }
 
-    body{
-        
-        background: linear-gradient(to right, rgb(27, 108, 155) 0%, rgb(0, 81, 255) 50%, green 100%);
-        
-        color: rgb(7, 0, 1);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    div{
-    background-color: brown;
-
-
+    body {
+      background-color: var(--cor-primaria);
+      font-family: var(--fonte-padrao);
+      color: #333;
+      padding: 20px;
     }
 
-    h1{
-
-        font-family: '20db', cursive;
-        font-size: 3.0em;
-        color: rgb(94, 2, 16);
+    header {
+      text-align: center;
+      margin-bottom: 30px;
     }
-    
-    p{
 
-        font: bold 16px 'Arial', sans-serif;
+    h1 {
+      font-family: var(--fonte-destaque);
+      font-size: 3em;
+      color: #4B0082;
     }
-</style>
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: var(--cor-secundaria);
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .box h2 {
+      margin-bottom: 15px;
+      color: #4B0082;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <H1>olá mundo</H1>
-    <p>Me livrei da maldição </p>
-    
-    <script>
-           var n1 =Number(prompt('digite premeiro 1?'))
-           var n2 =Number(prompt('digite premeiro 2?'))
-           var resultado= n1+n2
-           document.write('Seu resultado é '+ resultado +'!')
+  <header>
+    <h1>Olá, Mundo!</h1>
+    <p>Me livrei da maldição</p>
+  </header>
 
+  <main class="container">
+    <section class="box" id="soma">
+      <h2>Soma de Números</h2>
+      <p id="resultado-soma"></p>
+    </section>
 
-    </script>
+    <section class="box" id="nome">
+      <h2>Seu Nome</h2>
+      <p id="resultado-nome"></p>
+    </section>
+
+    <section class="box" id="caracteres">
+      <h2>Informações do Nome</h2>
+      <p id="resultado-caracteres"></p>
+    </section>
+
+    <section class="box" id="parte4">
+      <h2>Formatação de Número</h2>
+      <p id="resultado-parte4"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Meu Site
+  </footer>
+
+  <script>
+    const n1 = Number(prompt('Digite o primeiro número:'));
+    const n2 = Number(prompt('Digite o segundo número:'));
+    const resultadoSoma = n1 + n2;
+    document.getElementById('resultado-soma').textContent = `O resultado da soma é ${resultadoSoma}.`;
+
+    const nome = prompt('Digite seu nome:');
+    document.getElementById('resultado-nome').textContent = `Seu nome é ${nome}.`;
+
+    const infoNome = `
+      Quantidade de caracteres: ${nome.length}.
+      Em maiúsculas: ${nome.toUpperCase()}.
+      Em minúsculas: ${nome.toLowerCase()}.
+    `;
+    document.getElementById('resultado-caracteres').textContent = infoNome;
+
+    // Parte 4 - Formatação de Número
+    const val = Number(prompt('Digite um número decimal:'));
+    const resultadoParte4 = `
+      Valor com 2 casas decimais: ${val.toFixed(2)}<br>
+      Valor com vírgula: ${val.toFixed(2).replace('.', ',')}<br>
+      Valor em Real: ${val.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
+    `;
+    document.getElementById('resultado-parte4').innerHTML = resultadoParte4;
+  </script>
 </body>
 </html>
+

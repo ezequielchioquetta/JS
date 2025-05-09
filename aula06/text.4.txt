@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa javascript</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        @font-face {
+        font-family: '20db';
+        src: url('../font/20-db/20db.otf') format('truetype');
+}
+
+        @import url('https://fonts.googleapis.com/css2?family= família= Meddon & display=swap');
+
+        :root{  /*variavel para todo pag */
+
+
+    --cor0:#b3d9ff;
+    --cor1:#80bfff;
+    --cor2:#3399ff;
+    --cor3:#0073e6;
+    --cor4:#00264d;
+    --cor5:#000d1a;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: Bebas Neue, cursive;
+    --fonte-android:Android,cursive;
+    --font-Meddon:'Meddon', cursiva;
+
+}
+
+    *{
+       
+padding:0px;
+margin: 0px;
+
+    }
+
+    body{
+        
+        background: linear-gradient(to right, rgb(27, 108, 155) 0%, rgb(0, 81, 255) 50%, green 100%);
+        
+        color: rgb(7, 0, 1);
+    }
+
+    
+
+    h1{
+
+        font-family: '20db', cursive;
+        font-size: 3.0em;
+        color: rgb(94, 2, 16);
+    }
+    
+    p{
+
+        font: bold 16px 'Arial', sans-serif;
+    }
+    .parte1{
+        display:inline-block;
+        background-color: rgb(5, 5, 4);
+        color: rgba(243, 244, 245, 0.945);
+        font: bold 20px 'Arial', sans-serif;
+        margin: 10px 10px 10px 10px;
+        padding: 100px 10px 10px 10px;
+
+
+    }
+    .parte2{
+        display:inline-block;
+        background-color: rgb(33, 160, 29);
+        color: rgba(243, 244, 245, 0.945);
+        font: bold 20px 'Arial', sans-serif;
+        margin: 100px 10px 10px 10px;
+        padding: 100px 10px 10px 10px;
+
+
+    }
+
+     .parte3{
+        display:inline-block;
+        background-color: rgb(202, 41, 41);
+        color: rgba(0, 3, 5, 0.945);
+        font: bold 20px 'Arial', sans-serif;
+        margin: 200px 10px 10px 10px;
+        padding: 100px 10px 10px 10px;
+
+
+    }
+</style>
+</head>
+<body>
+    <H1>olá mundo</H1>
+    <p>Me livrei da maldição </p>
+    <div class="parte1">
+    <script>
+           var n1 =Number(prompt('digite premeiro 1?'))
+           var n2 =Number(prompt('digite premeiro 2?'))
+           var resultado= n1+n2
+           document.write('Seu resultado é '+ resultado +'!')
+
+
+    </script>
+    </div>
+    <br>
+    
+    <div class="parte2">
+     <script>
+           var nome = prompt('digite seu none')
+           document.write('Seu nome  é '+ nome +'!')
+
+    </script>
+    <br>
+    <div class="parte3">
+        <script>     
+            document.write('quantidade de caracteris é'+ nome.length +'!')
+             document.write('Tudo em maiúsculo'+ nome.toUpperCase() +'!')
+              document.write('tudo em minúsculo'+ nome.toLowerCase() +'!')
+        </script>       
+
+    </div>
+    </div>
+</body>
+</html>
