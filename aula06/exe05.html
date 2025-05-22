@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>START DOM</title>
+     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    :root {
+      --cor-primaria: #E6E6FA;
+      --cor-secundaria: #FADADD;
+      --cor-destaque: #D3D3D3;
+      --fonte-padrao: 'Arial', sans-serif;
+      --fonte-destaque: 'Bebas Neue', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--cor-primaria);
+      font-family: var(--fonte-padrao);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-family: var(--fonte-destaque);
+      font-size: 3em;
+      color: #4B0082;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+        <h1>Primiro passos com DOM</h1>
+        <p>Aqui vai o resultdo  </p>
+        <p> Aprendendo a usar <strong> DOM</strong> </p>
+        <div>Clique em min</div>
+
+       
+           <script>
+    var p1 = window.document.getElementsByTagName('p')[1
+        
+    ]
+    p1.style.color='blue'
+    //window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerText)
+    window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerHTML)        
+</script>
+        </script>
+
+</body>
+</html>
