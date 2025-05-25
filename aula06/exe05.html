@@ -49,18 +49,54 @@
         <h1>Primiro passos com DOM</h1>
         <p>Aqui vai o resultdo  </p>
         <p> Aprendendo a usar <strong> DOM</strong> </p>
-        <div>Clique em min</div>
+        <br>
+        <div id="msg">Clique em min</div>
 
        
            <script>
-    var p1 = window.document.getElementsByTagName('p')[1
-        
-    ]
+    var p1 = window.document.getElementsByTagName('p')[1]
     p1.style.color='blue'
-    //window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerText)
-    window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerHTML)        
+            /*window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerText)
+            ------------
+            window.document.write('<br>Está escrito assim: '+'<br>' + p1.innerHTML)
+            --------------
+            var p1 = window.document.getElementsByTagName('p')[1]
+            ------------- por ID
+            var d = window.document.getElementById('msg') 
+           
+            d.style.background= 'green'
+            d.innerHTML='Estou aguardando ....' 
+            -------------
+           
+           var d = window.document.getElementById('msg') 
+            d.innerHTML = 'tchau '
+            d.style.color='red'
+             --------------- por classe
+             
+           var d = document.getElementsByClassName('msg')[0]
+           d.innerHTML = 'ola'
+           d.style.color='blue'
+           
+           -----------
+           //class="msg"
+            var d = window.document.querySelector('div.msg')
+            d.style.color='blue'
+            d.innerHTML = 'ola'
+            
+            --------------
+             
+            //id="div#msg"
+            //id.'div#msg'
+            //class = div.
+            */
+            var d = window.document.querySelector('div#msg')
+            d.style.color='blue'
+            d.innerHTML = 'ola'
+
+
+
 </script>
-        </script>
+      
 
 </body>
 </html>
